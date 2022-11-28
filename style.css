@@ -1,15 +1,382 @@
+* {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+  background: #d9d9d9;
+}
+
+aside .section-header {
+  position: relative;
+  margin: 10px 0;
+  text-align: left;
+}
+
+aside .section-header h2 {
+  margin-top: 10%;
+  margin-left: 15%;
+  padding-left: 10px;
+  color: #221164;
+  font-size: 17pt;
+  font-family: "Quicksand", sans-serif;
+  background: #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+
+.right-side #education span {
+  padding: 3px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  background: #e0a539;
+  border-radius: 5px;
+}
+
+.right-side #experience span {
+  padding: 3px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  background: #e0a539;
+  border-radius: 5px;
+}
+
+#education .section-list li:first-child {
+  margin-bottom: 20px;
+}
+
+#experience .section-list li:first-child {
+  margin-bottom: 20px;
+}
+
+.contacts-list li {
+  margin-top: 10px;
+  margin-left: 22px;
+  color: #ffffff;
+  font-size: 14pt;
+  list-style: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle-line {
+  display: flex;
+  flex-direction: column;
+  height: 65px;
+  margin-left: 16px;
+  border-left: 3px solid #463b74;
+}
+
+.projects-image {
+  width: 250px;
+  height: 300px;
+}
+
+.projects-item {
+  padding-left: 10px;
+}
+
+.projects-item a {
+  margin-bottom: 0;
+  color: #221164;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.projects-item img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+
+.projects-item p:hover {
+  color: #e0a539;
+  transition: color 0.5s;
+}
+
+.section-code {
+  margin: 20px;
+  padding: 10px;
+  background: #d9d9d9;
+  border: 2px #d9d9d9 solid;
+  border-radius: 1rem;
+  box-shadow: 13px 10px 20px 2px rgb(0 0 0 / 43%);
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background: #463b74;
+  border: 4px solid #463b74;
+  border-radius: 4rem;
+}
+
+.circle:last-child {
+  margin-bottom: 5px;
+}
+
+.scale span {
+  display: block;
+  height: 100%;
+}
+
+.scale {
+  width: 90%;
+  height: 27px;
+  margin-top: 5px;
+  margin-right: 60px;
+  background-color: rgb(255 255 255 / 21%);
+  border-radius: 5px;
+}
+
+#git-skill .scale-filling {
+  margin-right: 30%;
+}
+
+#html-skill .scale-filling {
+  margin-right: 30%;
+}
+
+#css-skill .scale-filling {
+  margin-right: 30%;
+}
+
+#js-skill .scale-filling {
+  margin-right: 40%;
+}
+
+#graphic-skill .scale-filling {
+  margin-right: 20%;
+}
+
+#sql-skill .scale-filling {
+  margin-right: 20%;
+}
+
+#cypress-skill .scale-filling {
+  margin-right: 10%;
+}
+
+.scale-filling {
+  background-color: #e0a539;
+  border-radius: 5px;
+  animation: filling 1s ease;
+}
+
+.contacts-list li img {
+  width: 35px;
+  height: 40px;
+  margin: 5px;
+  vertical-align: -15px;
+}
+
+.contacts-list li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.contacts-list li a:hover {
+  color: #e0a539;
+}
+
+.contacts-list li:last-child {
+  margin-bottom: 50px;
+}
+
+.hard-skills li {
+  margin-top: 10px;
+  margin-left: 25px;
+  color: #ffffff;
+  font-size: 13pt;
+  list-style: none;
+}
+
+.hard-skills li:last-child {
+  margin-bottom: 50px;
+}
+
+.soft-skills li {
+  margin-top: 10px;
+  margin-left: 25px;
+  color: #ffffff;
+  font-size: 13pt;
+  list-style: none;
+}
+
+.soft-skills li:last-child {
+  margin-bottom: 50px;
+}
+
+.soft-skills li::before {
+  margin-right: 10px;
+  color: #e0a539;
+  content: "◆";
+}
+
+#languages li::before {
+  margin-right: 10px;
+  color: #e0a539;
+  content: "◆";
+}
+
+.right-side .section-list {
+  padding: 20px 15px 0 10px;
+  list-style: none;
+}
+
+.right-side #experience .section-list {
+  margin-left: 0;
+}
+
 .header {
-    top:20px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.main {
-    padding-top:100px;
+.nav {
+  vertical-align: center;
+  background-color: #221164;
 }
 
-.posLeft {
-    margin-left:-66%;
+main {
+  width: 65%;
+  margin: 40px auto;
+  box-shadow: 13px 10px 20px 14px rgb(0 0 0 / 23%);
 }
 
-.posCenter {
-    margin-left:33%;
+.right-side {
+  float: right;
+  width: 60%;
+  background: #ffffff;
+}
+
+.name {
+  padding: 5% 5% 0;
+}
+
+.name h1 {
+  color: #221164;
+  font-weight: 1000;
+  font-size: 50pt;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+}
+
+.name h2 {
+  color: #e0a539;
+  font-weight: 1000;
+  font-size: 25pt;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+.left-side {
+  float: left;
+  width: 40%;
+  height: 1963px;
+  background: #463b74;
+}
+
+.personal-photo {
+  left: 50%;
+  width: 65%;
+  margin-top: 10%;
+  margin-left: 20%;
+  border: 15px solid #ffffff;
+  border-radius: 200px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: #221164;
+}
+
+.footer-year {
+  width: 100px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 37px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.footer-github {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: -5px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  color: #ffffff;
+  line-height: 50px;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #e0a539;
+}
+
+.right-side .section-header h2 {
+  margin-top: 5%;
+  margin-right: 40%;
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 17pt;
+  font-family: "Quicksand", sans-serif;
+  background: #463b74;
+  border-radius: 0 5px 5px 0;
+}
+
+.section-desc {
+  padding: 15px 15px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
