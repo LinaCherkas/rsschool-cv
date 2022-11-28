@@ -1,10 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+    <title>Cherkas Anhelina CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300;400&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#languages" class="nav-link">Languages</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code Example</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="right-side">
+        <section class="name">
+          <h1>ANHELINA CHERKAS</h1>
+          <h2>Front-End Developer</h2>
+        </section>
+        <section class="section" id="summary">
+          <div class="section-header">
+            <h2>SUMMARY</h2>
+          </div>
+          <div class="section-desc">
+            <p>
+              I have 1 year working experience in Software Testing. Flexibility
+              of thinking and interpersonal skills allow me to adapt in any
+              team. I'm interested in difficult tasks and learning something
+              new. Now I want to try myself as a frontend developer and hope my
+              experience in IT sphere will help me.
+            </p>
+          </div>
+        </section>
+        <section class="section" id="education">
+          <div class="section-header">
+            <h2>EDUCATION</h2>
+          </div>
+          <div class="content">
+            <div class="circle-container">
+              <div class="circle"></div>
+              <div class="circle-line"></div>
+              <div class="circle"></div>
+            </div>
+            <ul class="section-list">
+              <li>
+                <span>2018-2022</span>
+                <p>Bachelor, BSUIR, Faculty of Computer Systems and Networks</p>
+              </li>
+              <li>
+                <span>2021</span>
+                <p>iTechArt Courses for QA</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section" id="experience">
+          <div class="section-header">
+            <h2>EXPERIENCE</h2>
+          </div>
+          <div class="content">
+            <div class="circle-container">
+              <div class="circle"></div>
+              <div class="circle-line"></div>
+              <div class="circle"></div>
+            </div>
+            <ul class="section-list">
+              <li>
+                <span>2020-2021</span>
+                <p>Designer, freelance</p>
+              </li>
+              <li>
+                <span>2021-2022</span>
+                <p>QA Engineer (manual + automation with Cypress)</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section" id="languages">
+          <div class="section-header">
+            <h2>LANGUAGES</h2>
+          </div>
+          <ul class="section-list">
+            <li>Russian - Native</li>
+            <li>Belarusian - Native</li>
+            <li>English - B1+</li>
+          </ul>
+        </section>
+        <section class="section" id="projects">
+          <div class="section-header">
+            <h2>PROJECTS</h2>
+          </div>
+          <ul class="section-list">
+            <li class="projects-item">
+              <a rel="noopener" href="https://github.com/LinaCherkas/">
+                <img
+                  src="assets/cv.png"
+                  alt="CV image"
+                  class="projects-image">
+                <p>CV</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <div class="section-header">
+            <h2>CODE EXAMPLE</h2>
+          </div>
+          <div class="section-code">
+            <pre>
+it('Negative Post - login unsuccessful ', () => {
+        cy.request({
+            method: 'POST',
+            url: '/api/login',
+            failOnStatusCode: false,
+            body:{
+            email: 'email',
+            },
+        }).then((response) => {
+          expect(response.status).to.eq(400)
+          })
+        })
+      </pre>
+          </div>
+        </section>
+      </div>
+      <div class="left-side">
+        <img
+          src="/assets/personal-photo.png"
+          alt="My photo"
+          class="personal-photo">
+        <aside>
+          <section class="contacts">
+            <div class="section-header">
+              <h2>CONTACTS</h2>
+            </div>
+            <ul class="contacts-list">
+              <li>
+                <img src="/assets/phone_icon.svg" alt="phone">+375447004352
+              </li>
+              <li>
+                <img src="/assets/mail_icon.svg" alt="mail">
+                angelinacherkas1@gmail.com
+              </li>
+              <li>
+                <img src="/assets/location_icon.svg" alt="git">
+                <a href="https://github.com/LinaCherkas/">Github</a>
+              </li>
+            </ul>
+            <section class="hard-skills">
+              <div class="section-header">
+                <h2>HARD SKILLS</h2>
+              </div>
+              <ul class="hard-skills-list">
+                <li>
+                  GIT
+                  <div class="scale">
+                    <span id="git-skill">
+                      <span class="scale-filling"></span></span>
+                  </div>
+                </li>
+                <li>
+                  HTML
+                  <div class="scale">
+                    <span id="html-skill">
+                      <span class="scale-filling">
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  CSS
+                  <div class="scale">
+                    <span id="css-skill">
+                      <span class="scale-filling">
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  JAVASCRIPT
+                  <div class="scale">
+                    <span id="js-skill">
+                      <span class="scale-filling">
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  PS, AE, AI, FIGMA
+                  <div class="scale">
+                    <span id="graphic-skill">
+                      <span class="scale-filling">
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  SQL
+                  <div class="scale">
+                    <span id="sql-skill">
+                      <span class="scale-filling">
+                      </span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  CYPRESS
+                  <div class="scale">
+                    <span id="cypress-skill">
+                      <span class="scale-filling">
+                      </span>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="soft-skills">
+              <div class="section-header">
+                <h2>SOFT SKILLS</h2>
+              </div>
+              <ul class="soft-skills-list">
+                <li>COMMUNICATIVE</li>
+                <li>ADAPTABILITY</li>
+                <li>TIME MANAGEMENT</li>
+                <li>CREATIVITY</li>
+              </ul>
+            </section>
+          </section>
+        </aside>
+      </div>
+      <footer class="footer">
+        <a
+          class="footer-github"
+          href="https://github.com/LinaCherkas/"
+          rel="noopener"
+        >
+          <img class="github-icon" src="assets/github.svg" alt="Github Icon">
+          My GitHub
+        </a>
+        <p class="footer-year">2022</p>
+        <a class="footer-rsschool" href="https://rs.school/js/" rel="noopener">
+          <img
+            src="assets/rsschool.svg"
+            width="86"
+            height="32"
+            alt="RS School">
+        </a>
+      </footer>
+    </main>
+  </body>
 </html>
