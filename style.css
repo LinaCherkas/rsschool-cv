@@ -297,10 +297,14 @@ main {
   line-height: 1.5;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .left-side {
   float: left;
   width: 40%;
-  height: 1963px;
   background: #463b74;
 }
 
