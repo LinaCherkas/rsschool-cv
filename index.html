@@ -134,7 +134,7 @@
           </div>
           <div class="section-code">
             <pre>
-it('Negative Post - login unsuccessful ', () =&gt {
+it('Negative Post - login unsuccessful ', () =&gt; {
         cy.request({
             method: 'POST',
             url: '/api/login',
@@ -142,7 +142,7 @@ it('Negative Post - login unsuccessful ', () =&gt {
             body:{
             email: 'email',
             },
-        }).then((response) =&gt {
+        }).then((response) =&gt; {
           expect(response.status).to.eq(400)
           })
         })
