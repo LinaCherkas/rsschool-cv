@@ -7,7 +7,6 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -257,7 +256,7 @@ aside .section-header h2 {
 .header {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
+  width: 65%;
 }
 
 .nav {
@@ -267,8 +266,6 @@ aside .section-header h2 {
 
 main {
   width: 65%;
-  margin: 40px auto;
-  box-shadow: 13px 10px 20px 14px rgb(0 0 0 / 23%);
 }
 
 .right-side {
@@ -321,7 +318,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 65%;
   padding: 20px;
   background-color: #221164;
 }

@@ -13,31 +13,31 @@
       rel="stylesheet">
   </head>
   <body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#summary" class="nav-link">Summary</a>
+        </li>
+        <li class="nav-item">
+          <a href="#education" class="nav-link">Education</a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="#languages" class="nav-link">Languages</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#code" class="nav-link">Code Example</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <main>
-      <header class="header">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#summary" class="nav-link">Summary</a>
-            </li>
-            <li class="nav-item">
-              <a href="#education" class="nav-link">Education</a>
-            </li>
-            <li class="nav-item">
-              <a href="#experience" class="nav-link">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a href="#languages" class="nav-link">Languages</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#code" class="nav-link">Code Example</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
       <div class="main-content">
       <div class="right-side">
         <section class="name">
@@ -134,7 +134,7 @@
           </div>
           <div class="section-code">
             <pre>
-it('Negative Post - login unsuccessful ', () => {
+it('Negative Post - login unsuccessful ', () =&gt; {
         cy.request({
             method: 'POST',
             url: '/api/login',
@@ -142,7 +142,7 @@ it('Negative Post - login unsuccessful ', () => {
             body:{
             email: 'email',
             },
-        }).then((response) => {
+        }).then((response) =&gt; {
           expect(response.status).to.eq(400)
           })
         })
@@ -256,24 +256,24 @@ it('Negative Post - login unsuccessful ', () => {
         </aside>
       </div>
       </div>
-      <footer class="footer">
-        <a
-          class="footer-github"
-          href="https://github.com/LinaCherkas/"
-          rel="noopener"
-        >
-          <img class="github-icon" src="./assets/github.svg" alt="Github Icon">
-          My GitHub
-        </a>
-        <p class="footer-year">2022</p>
-        <a class="footer-rsschool" href="https://rs.school/js/" rel="noopener">
-          <img
-            src="./assets/rsschool.svg"
-            width="86"
-            height="32"
-            alt="RS School">
-        </a>
-      </footer>
     </main>
+  <footer class="footer">
+    <a
+      class="footer-github"
+      href="https://github.com/LinaCherkas/"
+      rel="noopener"
+    >
+      <img class="github-icon" src="./assets/github.svg" alt="Github Icon">
+      My GitHub
+    </a>
+    <p class="footer-year">2022</p>
+    <a class="footer-rsschool" href="https://rs.school/js/" rel="noopener">
+      <img
+        src="./assets/rsschool.svg"
+        width="86"
+        height="32"
+        alt="RS School">
+    </a>
+  </footer>
   </body>
 </html>
